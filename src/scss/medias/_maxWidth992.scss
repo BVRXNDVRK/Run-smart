@@ -1,0 +1,22 @@
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .promo {
+        &__header {
+            font-size: 36px;
+        }
+    }
+
+    .advantages {
+        &__card {
+            width: 220px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+

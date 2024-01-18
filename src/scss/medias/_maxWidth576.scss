@@ -1,0 +1,58 @@
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .header {
+        &__logo {
+            width: 120px;
+            font-size: 24px;
+        }
+
+        &__contacts {
+            flex-direction: column;
+        }
+
+        &__phone {
+            margin-bottom: 8px;
+        }
+    }
+
+    .promo {
+        text-align: center;
+
+        &__header {
+            font-size: 26px;
+        }
+
+        &__icons {
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 55px;
+            }
+        }
+
+        &__icon {
+            width: 100%;
+            font-size: 18px;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .advantages {
+        &__card {
+            width: 100%;
+            padding: 0 15px 0 15px;
+        }
+    }
+}
