@@ -1,4 +1,10 @@
 @media (max-width: 992px) {
+    .title {
+        &_left {
+            font-size: 31px;
+        }
+    }
+
     .container {
         width: 720px;
     }

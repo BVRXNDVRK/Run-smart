@@ -1,4 +1,16 @@
 @media (max-width: 768px) {
+    .title {
+        font-size: 23px;
+
+        &_left {
+            text-align: center;
+        }
+    }
+
+    .feed-form {
+        margin: 0 auto;
+    }
+
     .container {
         width: 540px;
     }
@@ -61,6 +73,14 @@
         }
 
         &__text {
+            font-size: 18px;
+        }
+    }
+
+    .consultation {
+        text-align: center;
+
+        &__description {
             font-size: 18px;
         }
     }

@@ -5,4 +5,11 @@
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+
+    &_left {
+        font-size: 36px;
+        text-align: left;
+        color: white;
+        margin-bottom: 8px;
+    }
 }
