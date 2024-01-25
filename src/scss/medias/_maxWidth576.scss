@@ -70,4 +70,10 @@
             font-size: 14px;
         }
     }
+
+    .carousel {
+        &__inner {
+            width: 300px;
+        }
+    }
 }

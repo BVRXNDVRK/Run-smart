@@ -24,5 +24,15 @@
             font-size: 15px;
         }
     }
+
+    .carousel {
+        &__inner {
+            width: 535px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
