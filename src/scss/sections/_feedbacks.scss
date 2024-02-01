@@ -1,0 +1,31 @@
+.feedbacks {
+    padding-bottom: 60px;
+
+    &__feedback {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    &__img {
+        width: 170px;
+        height: 170px;
+        margin-right: 60px;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 300;
+        color: #646464;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
