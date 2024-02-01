@@ -84,5 +84,20 @@
             font-size: 18px;
         }
     }
+
+    .catalog {
+        &__tabs {
+            width: 500px;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &-item {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
 }
 
