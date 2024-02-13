@@ -106,4 +106,17 @@
             margin-bottom: 15px;
         }
     }
+
+    .footer {
+        &__info {
+            padding: 50px 30px 60px 30px;
+            width: 320px;
+        }
+
+        &__socials-item {
+            &:hover {
+                transform: translateY(0);
+            }
+        }
+    }
 }

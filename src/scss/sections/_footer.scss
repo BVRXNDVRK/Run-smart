@@ -1,0 +1,52 @@
+.footer {
+    height: 630px;
+    position: relative;
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 270px;
+        background-color: $main-color;
+        padding: 50px 69px 60px 69px;
+        text-align: center;
+    }
+
+    &__address {
+        margin-bottom: 36px;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__phone {
+        display: block;
+        margin-bottom: 38px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__socials-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin: 0 15px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
