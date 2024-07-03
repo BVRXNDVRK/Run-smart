@@ -14,8 +14,10 @@ $(document).ready(function(){
         }]
     });
  
-    // document.querySelector('.slick-dots li').style.backgroundColor = '#282828';
-
+    if (parseInt(window.getComputedStyle(document.querySelector('body')).getPropertyValue("width")) < 768) {
+      document.querySelector('.slick-dots li').style.backgroundColor = '#282828';
+    }
+    
     const activeDot = setInterval(() => {
       document.querySelectorAll('.slick-dots li').forEach(i => {
         if (i.classList.contains('slick-active')) {
