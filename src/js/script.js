@@ -82,4 +82,33 @@ $(document).ready(function(){
         $('.overlay, #order').fadeIn('slow');
       })
     });
+
+    
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    function validateForms(form) {
+      $(form).validate({
+        rules: {
+          name: "required",
+          phone: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+  
+        messages: {
+          name: "Please enter your name",
+          phone: "Please enter your phone number",
+          email: {
+            required: "Please enter your email",
+            email: "Please enter correct email"
+          }
+        }
+      });
+    }
+
+    $('input[name=phone]').mask("+38(099) 999 99 99");
   });

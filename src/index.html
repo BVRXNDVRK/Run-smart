@@ -85,10 +85,10 @@
                 Just fill out the application form <br> and we will call you back within 10 minutes
             </div>
 
-            <form class="feed-form" action="#">
-                <input class="feed-form__input" required name="name" placeholder="Your name" type="text">
-                <input class="feed-form__input" required name="phone" placeholder="Your phone number" type="number">
-                <input class="feed-form__input" required name="email" placeholder="Your e-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input class="feed-form__input" name="name" placeholder="Your name" type="text">
+                <input class="feed-form__input" name="phone" placeholder="Your phone number">
+                <input class="feed-form__input" name="email" placeholder="Your e-mail" type="email">
                 <button class="button button_main button_main-small" type="submit">order a consultation</button>
             </form>
         </div>
@@ -435,9 +435,9 @@
             <div class="modal__subtitle">Please fill out the application form</div>
             <div class="modal__descr">and we will call you back within 10 minutes</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input class="feed-form__input" required name="name" placeholder="Your name" type="text">
-                <input class="feed-form__input" required name="phone" placeholder="Your phone number" type="number">
-                <input class="feed-form__input" required name="email" placeholder="Your e-mail" type="email">
+                <input class="feed-form__input" name="name" placeholder="Your name" type="text">
+                <input class="feed-form__input" name="phone" placeholder="Your phone number">
+                <input class="feed-form__input" name="email" placeholder="Your e-mail" type="email">
                 <button class="button button_main button_main-small" type="submit">order a consultation</button>
             </form>
         </div>
@@ -447,9 +447,9 @@
             <div class="modal__subtitle">Your order:</div>
             <div class="modal__descr"></div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input class="feed-form__input" required name="name" placeholder="Your name" type="text">
-                <input class="feed-form__input" required name="phone" placeholder="Your phone number" type="number">
-                <input class="feed-form__input" required name="email" placeholder="Your e-mail" type="email">
+                <input class="feed-form__input" name="name" placeholder="Your name" type="text">
+                <input class="feed-form__input" name="phone" placeholder="Your phone number">
+                <input class="feed-form__input" name="email" placeholder="Your e-mail" type="email">
                 <button class="button button_main button_main-small" type="submit">Buy</button>
             </form>
         </div>
@@ -464,6 +464,8 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>    
+    <script src="js/jquery.validate.min.js"></script>    
+    <script src="js/jquery.maskedinput.min.js"></script>    
     <script src="js/script.js"></script>    
 </body>
 </html>
