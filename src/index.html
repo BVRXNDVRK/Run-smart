@@ -21,7 +21,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="#" class="header__phone">0000000000</a>
-                    <button class="button">Request a call</button>
+                    <button data-modal="consultation" class="button">Request a call</button>
                 </div>
             </header>
 
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <button class="button promo__button button_main">order a consultation</button>
+                <button data-modal="consultation" class="button promo__button button_main">order a consultation</button>
                 <div class="promo__link">
                     or 
                     <a href="#">go to catalog</a>
@@ -89,7 +89,7 @@
                 <input class="feed-form__input" required name="name" placeholder="Your name" type="text">
                 <input class="feed-form__input" required name="phone" placeholder="Your phone number" type="number">
                 <input class="feed-form__input" required name="email" placeholder="Your e-mail" type="email">
-                <button class="button button_main" type="submit">order a consultation</button>
+                <button data-modal="consultation" class="button button_main" type="submit">order a consultation</button>
             </form>
         </div>
     </section>
@@ -119,7 +119,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content">
                             <img class="catalog-item__img" src="images/photo.jpg" alt="heart rate monitor">
-                            <div class="catalog-item__subtitle">Heart rate monitor Polar FT1</div>
+                            <div class="catalog-item__subtitle">Heart rate monitor Polar FT31</div>
                             <div class="catalog-item__descr">For the first steps in training based on heart rate</div>
                             <a href="" class="catalog-item__link">More details</a>
                         </div>
@@ -428,6 +428,38 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Please fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input class="feed-form__input" required name="name" placeholder="Your name" type="text">
+                <input class="feed-form__input" required name="phone" placeholder="Your phone number" type="number">
+                <input class="feed-form__input" required name="email" placeholder="Your e-mail" type="email">
+                <button class="button button_main button_main-small" type="submit">order a consultation</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order:</div>
+            <div class="modal__descr"></div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input class="feed-form__input" required name="name" placeholder="Your name" type="text">
+                <input class="feed-form__input" required name="phone" placeholder="Your phone number" type="number">
+                <input class="feed-form__input" required name="email" placeholder="Your e-mail" type="email">
+                <button class="button button_main button_main-small" type="submit">Buy</button>
+            </form>
+        </div>
+
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle"></div>
+            <div class="modal__descr"></div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

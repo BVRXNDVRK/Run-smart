@@ -119,4 +119,26 @@
             }
         }
     }
+
+    .modal {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .feed-form {
+        width: 260px;
+
+        &__input {
+            width: 260px;
+        }
+    }
+
+    .button_main-small {
+        width: 260px;
+    }
+
+    .modal__close {
+        top: -40px;
+        right: 5px;
+    }
 }
