@@ -1,0 +1,22 @@
+@keyframes cupshake {
+    from {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(-20deg);
+    }
+    66% {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+[data-cup] {
+    animation: cupshake 1s ease infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}    

@@ -1,0 +1,19 @@
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+[data-heart] {
+    animation: heartbeat 1s ease infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}    

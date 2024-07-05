@@ -1,0 +1,22 @@
+@keyframes sneakermove {
+    from {
+        transform: translateX(-5px);
+    }
+    33% {
+        transform: rotate(-70deg);
+    }
+    66% {
+        transform: translateX(30px);
+    }
+    to {
+        transform: translateX(-5px);
+    }
+}
+
+[data-shoe] {
+    animation: sneakermove 1s ease-in-out infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}    
