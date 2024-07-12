@@ -11,16 +11,16 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.ukr.net';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'igxr.lxgvenyuk@gmail.com';                 // Наш логин
-$mail->Password = 'yzmk xyqb iegd ngfw';                           // Наш пароль от ящика
+$mail->Username = 'gssgr@ukr.net';                 // Наш логин
+$mail->Password = 'erjdIYXR4ikf7Ekq';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('igxr.lxgvenyuk@gmail.com', 'Pulse');   // От кого письмо 
-$mail->addAddress('gssgr@ukr.net');     // Add a recipient
-$mail->addAddress('cigane3021@bsidesmn.com');               // Name is optional
+$mail->setFrom('gssgr@ukr,net', 'Pulse');   // От кого письмо 
+$mail->addAddress('igxr.lxgvenyuk@gmail.com');     // Add a recipient
+//$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
@@ -28,11 +28,11 @@ $mail->addAddress('cigane3021@bsidesmn.com');               // Name is optional
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Data';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
+		Use data <br> 
+	Name: ' . $name . ' <br>
+	Phone number: ' . $phone . '<br>
 	E-mail: ' . $email . '';
 
 if(!$mail->send()) {
